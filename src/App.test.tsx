@@ -6,7 +6,7 @@ import { expect } from 'vitest';
 describe('App Component Tests', () => {
   it('Initial Render Main App', () => {
     render(<App />);
-    const countButton = screen.getByRole('count-button')
+    const countButton = screen.getByTestId('count-button')
     expect(countButton).toHaveTextContent('0');
   });
 
